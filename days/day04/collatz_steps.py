@@ -19,4 +19,5 @@ collatz_tests = [
 ]
 
 for test in collatz_tests:
-    print(f'the input is {test[0]} and the expected is {test[1]}, the output is {collatz_steps(test[0])}')
+    output = collatz_steps(test[0])
+    print(f'the input is {test[0]} and the expected is {test[1]}, the output is {output}, the test: {"Pass" if output == test[1] else "Fail"}')
